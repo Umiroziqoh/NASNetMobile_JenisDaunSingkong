@@ -414,17 +414,17 @@ def halaman_informasi():
         {
             "title": "Daun Singkong Karet",
             "desc": "Menghasilkan umbi beracun dengan kandungan sianida tinggi sehingga tidak untuk konsumsi. Daun harus dimasak atau dijemur terlebih dahulu sebelum digunakan, baik sebagai sayuran maupun pakan ternak.",
-            "img": "daun singkong karet.PNG"
+            "img": "daun singkong karet.png"
         },
         {
             "title": "Daun Singkong Papua",
             "desc": "Daun mengandung kadar sianida alami yang cukup tinggi, sehingga perlu dijemur atau dilayukan terlebih dahulu sebelum diberikan kepada ternak. Tanaman ini lebih difokuskan pada produksi daun dan tidak menghasilkan umbi yang dapat dikonsumsi.",
-            "img": "daun singkong papua.PNG"
+            "img": "daun singkong papua.png"
         },
         {
             "title": "Daun Singkong Sayur",
             "desc": "Daun singkong ini bertekstur lembut, tidak kaku, dan tidak langu. Daun muda dipanen untuk sayur dan dapat dipanen kembali sekitar 15 hari setelah dipetik. Singkong ini khusus dibudidayakan untuk produksi daun sehingga tidak menghasilkan umbi konsumsi. Daun harus dimasak sebelum dikonsumsi.",
-            "img": "daun singkong sayur.PNG"
+            "img": "daun singkong sayur.png"
         }
     ]
 
@@ -542,17 +542,17 @@ def halaman_jenis():
         {
             "title": "Daun Singkong Karet",
             "desc": "Memiliki daun besar, lebar, dan rimbun dengan warna hijau tua serta pertumbuhan tanaman yang cepat dan batang kuat.",
-            "img": "daun singkong karet.PNG"
+            "img": "daun singkong karet.png"
         },
         {
             "title": "Daun Singkong Papua",
             "desc": "Memiliki daun lebar menjari dengan 3-5 lobus besar. Batang kokoh, berkayu lunak.",
-            "img": "daun singkong papua.PNG"
+            "img": "daun singkong papua.png"
         },
         {
             "title": "Daun Singkong Sayur",
             "desc": "Memiliki batang kecil dengan daun sempit, rimbun, serta bentuk daun menjari yang ramping, panjang, dan runcing dengan tangkai daun yang panjang.",
-            "img": "daun singkong sayur.PNG"
+            "img": "daun singkong sayur.png"
         }
     ]
 
