@@ -1,0 +1,1 @@
+{0: 'daun_singkong_karet', 1: 'daun_singkong_papua', 2: 'daun_singkong_sayur'}
