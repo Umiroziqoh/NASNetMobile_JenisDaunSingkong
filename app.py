@@ -48,7 +48,7 @@ st.markdown("""
     transform:scale(1.03);
 }
 
-/* CARD CIRI DAUN */
+/* CARD JENIS DAUN */
 .card {
     display: flex;
     align-items: center;
@@ -173,7 +173,7 @@ def menu_utama():
     st.markdown("<br><br>", unsafe_allow_html=True)
 
     kamera_base64 = get_base64("kamera.jpg")
-    ciri_base64 = get_base64("ciri.jpg")
+    jenis_base64 = get_base64("jenis.jpg")
     info_base64 = get_base64("informasi.jpg")
     hasil_base64 = get_base64("hasil deteksi.jpg")
 
@@ -192,16 +192,16 @@ def menu_utama():
             st.session_state.page = "kamera"
             st.rerun()
 
-    # CIRI DAUN
+    # JENIS DAUN
     with col2:
         st.markdown(f"""
             <div class="menu-card">
-                <img src="data:image/png;base64,{ciri_base64}" width="170">
+                <img src="data:image/png;base64,{jenis_base64}" width="170">
             </div>
         """, unsafe_allow_html=True)
 
-        if st.button("Ciri Daun", key="menu_ciri"):
-            st.session_state.page = "ciri"
+        if st.button("jenis Daun", key="menu_jenis"):
+            st.session_state.page = "jenis"
             st.rerun()
 
     # INFORMASI
@@ -329,25 +329,25 @@ def hasil_deteksi():
     data = {
         "Karet": {
             "nama": "Daun Singkong Karet",
-            "ciri": "Memiliki daun besar, lebar, dan rimbun dengan warna hijau tua serta pertumbuhan tanaman yang cepat dan batang kuat.",
+            "jenis": "Memiliki daun besar, lebar, dan rimbun dengan warna hijau tua serta pertumbuhan tanaman yang cepat dan batang kuat.",
             "info": "Menghasilkan umbi beracun dengan kandungan sianida tinggi sehingga tidak untuk konsumsi. Daun harus dimasak atau dijemur terlebih dahulu sebelum digunakan, baik sebagai sayuran maupun pakan ternak."
         },
 
         "Papua": {
             "nama": "Daun Singkong Papua",
-            "ciri": "Memiliki daun lebar menjari dengan 3-5 lobus besar. Batang kokoh, berkayu lunak.",
+            "jenis": "Memiliki daun lebar menjari dengan 3-5 lobus besar. Batang kokoh, berkayu lunak.",
             "info": "Daun mengandung kadar sianida alami yang cukup tinggi, sehingga perlu dijemur atau dilayukan terlebih dahulu sebelum diberikan kepada ternak. Tanaman ini lebih difokuskan pada produksi daun dan tidak menghasilkan umbi yang dapat dikonsumsi."
         },
 
         "Sayur": {
             "nama": "Daun Singkong Sayur",
-            "ciri": "Memiliki batang kecil dengan daun sempit, rimbun, serta bentuk daun menjari yang ramping, panjang, dan runcing dengan tangkai daun yang panjang.",
+            "jenis": "Memiliki batang kecil dengan daun sempit, rimbun, serta bentuk daun menjari yang ramping, panjang, dan runcing dengan tangkai daun yang panjang.",
             "info": "Daun singkong ini bertekstur lembut, tidak kaku, dan tidak langu. Daun muda dipanen untuk sayur dan dapat dipanen kembali sekitar 15 hari setelah dipetik. Singkong ini khusus dibudidayakan untuk produksi daun sehingga tidak menghasilkan umbi konsumsi. Daun harus dimasak sebelum dikonsumsi."
         },
 
         "Tidak Dikenali": {
             "nama": "Gambar Tidak Dikenali",
-            "ciri": "Gambar yang diunggah bukan merupakan daun singkong yang menjadi ruang lingkup aplikasi.",
+            "jenis": "Gambar yang diunggah bukan merupakan daun singkong yang menjadi ruang lingkup aplikasi.",
             "info": "Sistem hanya mengenali: Daun Singkong Karet, Daun Singkong Papua, Daun Singkong Sayur"
         }
     }
@@ -379,9 +379,9 @@ def hasil_deteksi():
 
             st.markdown("<hr>", unsafe_allow_html=True)
 
-            # Ciri daun
-            st.markdown("<h4 style='text-align:center;'>Ciri Daun</h4>", unsafe_allow_html=True)
-            st.markdown(f"<p style='text-align:center;'>{detail['ciri']}</p>", unsafe_allow_html=True)
+            # jenis daun
+            st.markdown("<h4 style='text-align:center;'>jenis Daun</h4>", unsafe_allow_html=True)
+            st.markdown(f"<p style='text-align:center;'>{detail['jenis']}</p>", unsafe_allow_html=True)
 
             st.markdown("<hr>", unsafe_allow_html=True)
 
@@ -463,24 +463,24 @@ def halaman_riwayat():
         data = {
             "Karet": {
                 "nama": "Daun Singkong Karet",
-                "ciri": "Memiliki daun besar, lebar, dan rimbun dengan warna hijau tua serta pertumbuhan tanaman yang cepat dan batang kuat.",
+                "jenis": "Memiliki daun besar, lebar, dan rimbun dengan warna hijau tua serta pertumbuhan tanaman yang cepat dan batang kuat.",
                 "info": "Menghasilkan umbi beracun dengan kandungan sianida tinggi sehingga tidak untuk konsumsi. Daun harus dimasak atau dijemur terlebih dahulu sebelum digunakan, baik sebagai sayuran maupun pakan ternak."
             },
 
             "Papua": {
                 "nama": "Daun Singkong Papua",
-                "ciri": "Memiliki daun lebar menjari dengan 3-5 lobus besar. Batang kokoh, berkayu lunak.",
+                "jenis": "Memiliki daun lebar menjari dengan 3-5 lobus besar. Batang kokoh, berkayu lunak.",
                 "info": "Daun mengandung kadar sianida alami yang cukup tinggi, sehingga perlu dijemur atau dilayukan terlebih dahulu sebelum diberikan kepada ternak. Tanaman ini lebih difokuskan pada produksi daun dan tidak menghasilkan umbi yang dapat dikonsumsi."
             },
 
             "Sayur": {
                 "nama": "Daun Singkong Sayur",
-                "ciri": "Memiliki batang kecil dengan daun sempit, rimbun, serta bentuk daun menjari yang ramping, panjang, dan runcing dengan tangkai daun yang panjang.",
+                "jenis": "Memiliki batang kecil dengan daun sempit, rimbun, serta bentuk daun menjari yang ramping, panjang, dan runcing dengan tangkai daun yang panjang.",
                 "info": "Daun singkong ini bertekstur lembut, tidak kaku, dan tidak langu. Daun muda dipanen untuk sayur dan dapat dipanen kembali sekitar 15 hari setelah dipetik. Singkong ini khusus dibudidayakan untuk produksi daun sehingga tidak menghasilkan umbi konsumsi. Daun harus dimasak sebelum dikonsumsi."
             },
             "Tidak Dikenali": {
                 "nama": "Gambar Tidak Dikenali",
-                "ciri": "Gambar yang diunggah bukan merupakan daun singkong yang menjadi ruang lingkup aplikasi.",
+                "jenis": "Gambar yang diunggah bukan merupakan daun singkong yang menjadi ruang lingkup aplikasi.",
                 "info": "Sistem hanya mengenali: Daun Singkong Karet, Daun Singkong Papua, Daun Singkong Sayur"
             }
         }
@@ -506,12 +506,12 @@ def halaman_riwayat():
             st.markdown("<hr>", unsafe_allow_html=True)
 
             st.markdown(
-                "<h4 style='text-align:center;'>Ciri Daun</h4>",
+                "<h4 style='text-align:center;'>jenis Daun</h4>",
                 unsafe_allow_html=True
             )
 
             st.markdown(
-                f"<p style='text-align:center;'>{detail['ciri']}</p>",
+                f"<p style='text-align:center;'>{detail['jenis']}</p>",
                 unsafe_allow_html=True
             )
 
@@ -532,11 +532,11 @@ def halaman_riwayat():
         st.rerun()
 
 # =========================
-# HALAMAN CIRI
+# HALAMAN JENIS
 # =========================
-def halaman_ciri():
+def halaman_jenis():
 
-    st.markdown("<h1 style='text-align:center;'>Ciri Daun Singkong</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:center;'>jenis Daun Singkong</h1>", unsafe_allow_html=True)
 
     data = [
         {
@@ -569,7 +569,7 @@ def halaman_ciri():
         </div>
         """, unsafe_allow_html=True)
 
-    if st.button("⬅️ Kembali", key="btn_ciri"):
+    if st.button("⬅️ Kembali", key="btn_jenis"):
         st.session_state.page = "menu"
         st.rerun()
 
@@ -594,5 +594,5 @@ elif st.session_state.page == "riwayat":
 elif st.session_state.page == "informasi":
     halaman_informasi()
 
-elif st.session_state.page == "ciri":
-    halaman_ciri()
+elif st.session_state.page == "jenis":
+    halaman_jenis()
