@@ -536,7 +536,7 @@ def halaman_riwayat():
 # =========================
 def halaman_jenis():
 
-    st.markdown("<h1 style='text-align:center;'>jenis Daun Singkong</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:center;'>Ciri Daun Singkong</h1>", unsafe_allow_html=True)
 
     data = [
         {
