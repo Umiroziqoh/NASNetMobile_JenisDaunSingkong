@@ -48,7 +48,7 @@ st.markdown("""
     transform:scale(1.03);
 }
 
-/* CARD JENIS DAUN */
+/* CARD CIRI DAUN */
 .card {
     display: flex;
     align-items: center;
@@ -192,7 +192,7 @@ def menu_utama():
             st.session_state.page = "kamera"
             st.rerun()
 
-    # JENIS DAUN
+    # CIRI DAUN
     with col2:
         st.markdown(f"""
             <div class="menu-card">
@@ -200,7 +200,7 @@ def menu_utama():
             </div>
         """, unsafe_allow_html=True)
 
-        if st.button("jenis Daun", key="menu_jenis"):
+        if st.button("Ciri Daun", key="menu_jenis"):
             st.session_state.page = "jenis"
             st.rerun()
 
@@ -379,8 +379,8 @@ def hasil_deteksi():
 
             st.markdown("<hr>", unsafe_allow_html=True)
 
-            # jenis daun
-            st.markdown("<h4 style='text-align:center;'>jenis Daun</h4>", unsafe_allow_html=True)
+            # Ciri Daun
+            st.markdown("<h4 style='text-align:center;'>Ciri Daun</h4>", unsafe_allow_html=True)
             st.markdown(f"<p style='text-align:center;'>{detail['jenis']}</p>", unsafe_allow_html=True)
 
             st.markdown("<hr>", unsafe_allow_html=True)
@@ -506,7 +506,7 @@ def halaman_riwayat():
             st.markdown("<hr>", unsafe_allow_html=True)
 
             st.markdown(
-                "<h4 style='text-align:center;'>jenis Daun</h4>",
+                "<h4 style='text-align:center;'>Ciri Daun</h4>",
                 unsafe_allow_html=True
             )
 
